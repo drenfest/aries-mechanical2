@@ -1,0 +1,17 @@
+{
+  "name": "aries-mechanical2",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build ./public",
+    "preview": "svelte-kit preview",
+    "rename": "sh rename-extensions.sh",
+    "generate-sitemap": "node generate-sitemap",
+    "optimize-images": "imagemin static/assets/images/services/* --out-dir=public/assets/images/services && imagemin static/assets/images/icons/* --out-dir=public/assets/images/icons && imagemin static/assets/images/heros/* --out-dir=public/assets/images/heros && imagemin static/assets/images/* --out-dir=public/assets/images"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "svelte": "^3.42.6"
+  },
+  "type": "module"
+}
